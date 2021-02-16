@@ -13,6 +13,6 @@ class ItemReader(
     override fun read(path:String): ItemModel{
         val itemsType = itemTypeReader.read(path)
         val relations = relationReader.read(path)
-        return ItemModel(itemsType,relations);
+        return ItemModel(itemsType,relations)
     }
 }

@@ -3,7 +3,7 @@ plugins {
     id 'org.jetbrains.kotlin.jvm' version '1.4.30'
 }
 
-group 'org.example'
+group 'br.com.leoferreiralima'
 version '1.0-SNAPSHOT'
 
 repositories {

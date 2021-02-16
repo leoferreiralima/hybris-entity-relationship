@@ -29,8 +29,6 @@ class RelationReader: AbstractXmlReader<Set<RelationModel>>() {
     }
     private fun  getOptional(node: Node) =
         getNodesByTag("modifiers",node).firstOrNull()?.let { modifier->
-            getAttribute("optional",modifier).let { optional ->
-                optional.toBoolean()
-            }
+            "false" == getAttribute("optional",modifier)
         }?:true
 }
